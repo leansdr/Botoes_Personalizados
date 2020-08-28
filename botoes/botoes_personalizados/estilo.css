@@ -1,0 +1,87 @@
+/*Classe Padrão do Botão*/
+/*border - Define o estilo da borda (espessura em pixels e tipo da borda); 
+border-radius - Define o raio da borda em pixels;
+display: inline-block - Garante que tanto os links e os botões tenham a mesma altura;
+cursor:pointer - Garante que a imagem da "mãozinha" apareça quando o leitor passar com o mouse sobre o botão.
+font-family - Define a família da fonte;
+font-weight - Espessura da fonte;
+font-size - O tamanho da fonte em pixels;
+padding - Espaçamento de 6px em cima e em baixo e de 10px nas laterias direita e esquerda;
+text-decoration:none - Remove a linha sob o texto dos links.*/
+
+.bt{
+    border: 1px solid #25692A;
+    border-radius: 4px;
+    display: inline-block;
+    cursor: pointer;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 6px 10px;
+    text-decoration: none;
+}
+/*Finalmente, vamos definir a "pseudo classe: active" para criarmos um efeito de pressionar 
+quando clicarmos o botão. Usaremos apenas a pseudo classe para a classe padrão ".bt" que no 
+nosso exemplo servirá para todos botões, independente das cores*/
+
+.bt:active {
+position:relative;
+top:2px;}
+
+/*Classe Secundaria para os Botões*/
+/*border-color - Define a cor da borda (use o tom mais escuro);
+bacground:linear-gradient - Define o gradiente linear da cor (sentido to bottom, cor mais clara e cor mais escura)
+box-shadow: inset - Define a sombra no contorno do botão (utilize o tom mais claro)
+color: Define a cor da fonte;
+text-shadow - Define a sombra no texto */
+
+/*classe bt-vd (botão verde)*/
+.bt-vd {
+    border-color: #68b465;
+    background: linear-gradient(to bottom, #abd5aa 5%, #68b465 100%);
+    box-shadow: inset 0px 1px 0px 0px #e3f1e3;
+    color:#fff;
+    text-shadow:0px 1px 0px #528009;
+
+}
+.bt-vd:hover {
+background:linear-gradient(to bottom, #68b465 5%, #abd5aa 100%);
+}
+
+/*classe bt-vd (botão laranja)*/
+.bt-lj {
+    border-color:#eb9b48;
+    background: linear-gradient(to bottom, #f7d6b3 5%, #eb9b48 100%);
+    box-shadow: inset 0px 1px 0px #fdf7f0;
+    color: #333;
+    text-shadow:0px 1px 0px #ffee66;
+}
+.bt-lj:hover {
+background:linear-gradient(to bottom, #eb9b48 5%, #f7d6b3 100%);
+}
+
+/*classe bt-az (botão azul)*/
+.bt-az{
+    border-color:#46a7f5;
+    background: linear-gradient(to bottom,#86c6f8 5%, #46a7f5 100%);
+    box-shadow: inset 0px 1px 0px 0px #d7ecfd;
+    color: #fff;
+    text-shadow:0px 1px 0px #528009;
+}
+.bt-az:hover {
+background:linear-gradient(to bottom, #46a7f5 5%, #86c6f8 100%);
+}
+
+/*classe bt-az (botão vermelho)*/
+.bt-vm{
+    border-color:#f61f0e;
+    background: linear-gradient(to bottom, #fca8a1 5%, #f61f0e 100%);
+    box-shadow: inset0px 1px 0px 0px #fff4f3;
+    color:#fff;
+    text-shadow:0px 1px 0px #528009;  ;
+}
+.bt-vm:hover {
+background:linear-gradient(to bottom, #f61f0e 5%, #fca8a1 100%);
+}
+
+
